@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-    workflow_dispatch
+    workflow_dispatch:
 
 jobs:
   hello:
@@ -15,7 +15,7 @@ jobs:
         run: echo "hello world"
         shell: bash
   goodbye:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "goodbye"
         run: echo "goodbye world"
